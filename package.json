@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "kill": "lsof -ti tcp:3000 | xargs kill",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\""
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
+    "add-prettier": "cp ../scripts/.prettierignore . && cp ../scripts/.prettierrc . && npm i prettier"
   },
   "keywords": [],
   "author": "",
