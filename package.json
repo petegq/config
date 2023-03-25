@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "kill": "lsof -ti tcp:3000 | xargs kill",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
-    "add-prettier": "cp ../config/.prettierignore . && cp ../config/.prettierrc . && npm i prettier"
+    "add-prettier": "wget https://raw.githubusercontent.com/petegq/config/master/.prettierignore && wget https://raw.githubusercontent.com/petegq/config/master/.prettierrc && npm i prettier"
   },
   "keywords": [],
   "author": "",
