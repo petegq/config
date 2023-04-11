@@ -12,7 +12,10 @@ echo 'node_modules' >>./.gitignore
 npm i $2
 wget https://raw.githubusercontent.com/petegq/config/master/.prettierignore
 wget https://raw.githubusercontent.com/petegq/config/master/.prettierrc
-npm i prettier
+npm i prettier nodemon
+npm pkg set scripts.dev='nodemon index.js --port 8000'
+npm pkg set scripts.format='prettier --write "**/*.{js,jsx,ts,tsx}"'
+npm pkg set scripts.kill='lsof -ti tcp:8000 | xargs kill'
 git init
 git add .
 git commit -m 'Initial commit'
