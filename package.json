@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "kill": "lsof -ti tcp:3000 | xargs kill",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
-    "add-prettier": "wget https://raw.githubusercontent.com/petegq/config/master/.prettierignore && wget https://raw.githubusercontent.com/petegq/config/master/.prettierrc",
-    "makenode": "mkdir $npm_config_dirname && cd $npm_config_dirname && touch index.js && npm init -y && echo 'node_modules' >> ./.gitignore && wget https://raw.githubusercontent.com/petegq/config/master/.prettierignore && wget https://raw.githubusercontent.com/petegq/config/master/.prettierrc && npm i $npm_config_pkgs && git init && git add . && git commit -m 'Initial commit' && code ."
+    "add-prettier": "wget https://raw.githubusercontent.com/petegq/config/master/.prettierignore && wget https://raw.githubusercontent.com/petegq/config/master/.prettierrc && npm i prettier",
+    "makenode": "mkdir $npm_config_dirname && cd $npm_config_dirname && touch index.js && npm init -y && echo 'node_modules' >> ./.gitignore && npm i $npm_config_pkgs && wget https://raw.githubusercontent.com/petegq/config/master/.prettierignore && wget https://raw.githubusercontent.com/petegq/config/master/.prettierrc && npm i prettier && git init && git add . && git commit -m 'Initial commit' && code ."
   },
   "keywords": [],
   "author": "",
