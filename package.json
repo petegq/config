@@ -8,9 +8,12 @@
     "kill": "lsof -ti tcp:3000 | xargs kill",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
     "add-prettier": "wget https://raw.githubusercontent.com/petegq/config/master/.prettierignore && wget https://raw.githubusercontent.com/petegq/config/master/.prettierrc && npm i prettier",
-    "makenode": "./make-project.sh $npm_config_dirname $npm_config_pkgs"
+    "makenode": "./make-project.sh $npm_config_dir $npm_config_pkgs"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.8.7"
+  }
 }
